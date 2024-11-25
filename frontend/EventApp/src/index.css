@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, 
+      #e0eafc, /* Light blue-white */
+      #cfdef3, /* Soft sky blue */
+      #f6f1f1, /* Gentle off-white */
+      #ffffff, /* Pure white */
+      #b3cdd1, /* Muted teal */
+      #d6eaf8  /* Subtle icy blue */
+    );
+    background-size: 300% 300%;
+    animation: auroraLightEffect 10s ease infinite;
+    color: #000000; /* Ensures contrast with the lighter background */
+  }
+  
+  @keyframes auroraLightEffect {
+    0% {
+      background-position: 0% 50%;
+    }
+    50% {
+      background-position: 100% 50%;
+    }
+    100% {
+      background-position: 0% 50%;
+    }
+  }
+   }
+  
